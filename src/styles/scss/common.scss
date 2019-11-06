@@ -1,0 +1,188 @@
+
+// @import 'loaders.css/src/animations/pacman.scss';
+ 
+.loader-hidden {
+  display: none;
+}
+.loader-active {
+  display: block;
+}
+body{
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;  
+}
+.flip-container {
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    -o-perspective: 1000;
+    perspective: 1000;
+    position: relative;
+  }
+  
+    .flip-container:hover .flipper,  
+    .flip-container.hover .flipper {
+          -webkit-transform: rotateY(180deg);
+          -moz-transform: rotateY(180deg);
+      -o-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+      }
+//   .flip-container, .front, .back {
+//       width: 320px;
+//       height: 427px;
+//   }
+  .flipper {
+      -webkit-transition: 1s;
+      -webkit-transform-style: preserve-3d;
+  
+      -moz-transition: 1s;
+      -moz-transform-style: preserve-3d;
+    
+    -o-transition: 1s;
+      -o-transform-style: preserve-3d;
+  
+      transition: 1s;
+      transform-style: preserve-3d;
+
+  }
+  
+  .front, .back {
+      -webkit-backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+      backface-visibility: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+  }
+  .back {
+        -webkit-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+        -o-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+        height: 100%;
+  }
+  /* Slow-motion Zoom Container */
+.img-hover-zoom--slowmo img {
+// transform-origin: 50% 65%;
+transition: transform 3s, filter 3s ease-in-out;
+filter: brightness(100%);
+}
+
+/* The Transformation */
+.img-hover-zoom--slowmo:hover img {
+    filter: brightness(100%);
+    transform: scale(1.1);
+}
+
+/* Zoom-n-rotate Container */
+.img-hover-zoom--zoom-n-rotate img {
+transition: transform .5s ease-in-out;
+}
+
+/* The Transformation */
+.img-hover-zoom--zoom-n-rotate:hover img {
+transform: scale(1.1) rotate(25deg);
+}
+
+/* Blur-zoom Container */
+.img-hover-zoom--blur img {
+    transition: transform 1s, filter 2s ease-in-out;
+    filter: blur(2px);
+    transform: scale(1.2);
+  }
+  
+  /* The Transformation */
+  .img-hover-zoom--blur:hover img {
+    filter: blur(0);
+    transform: scale(1);
+  }
+
+
+  // .content-left span{
+  
+      // text-shadow: 0 0 80px rgba(255,255,255,.5);
+  /* Clip Background Image */
+      // background: url(../../assets/clientbackground.png) repeat-y;
+      // -webkit-background-clip: text;
+      // background-clip: text;
+  /* Animate Background Image */
+      // -webkit-text-fill-color: transparent;
+      // -webkit-animation: aitf 80s linear infinite;
+  /* Activate hardware acceleration for smoother animations */
+  
+      // -webkit-transform: translate3d(0,0,0);
+      // -webkit-backface-visibility: hidden;
+  
+    // }
+
+  /* Animate Background Image */
+  
+  // @-webkit-keyframes aitf {
+  //   0% { background-position: 0% 50%; }
+  //   100% { background-position: 100% 50%; }
+  // }
+  // .content-left h1:first-child {    
+    /* For increasing performance 
+    ID/Class should've been used. 
+    For a small demo 
+    it's okaish for now */
+// animation: showup 5s finite;
+// }
+// .content-left h1:nth-child(2) {
+// width:100%;
+// animation: slidein 7s infinite;
+// }
+// .content-left h1:last-child {
+// width:100%;
+// animation: slidein 9s infinite;
+// }
+// @keyframes showup {
+// 0% {opacity:0;}
+// 20% {opacity:1;}
+// 80% {opacity:1;}
+// 100% {opacity:0;}
+// }
+// @keyframes slidein {
+// 0% { margin-left:-800px; }
+// 20% { margin-left:-800px; }
+// 35% { margin-left:0px; }
+// 100% { margin-left:0px; }
+// }
+// @keyframes reveal {
+// 0% {opacity:0;width:0px;}
+// 20% {opacity:1;width:0px;}
+// 30% {width:600px;}
+// 80% {opacity:1;}
+// 100% {opacity:0;width:600px;}
+// }
+
+
+ 
+.Toastify__toast-container--top-right{
+  top:4.1rem !important;
+}
+.Toastify__toast--success {
+  background: #1c1f52 !important;
+}
+
+// ReCAPTCHA Styles
+// .rc-anchor-normal{
+//   width: 230px !important; 
+// }
+// .rc-anchor-normal .rc-anchor-content{
+//   width: 60% !important;
+// }
+// .rc-inline-block:first-child{ 
+//   width: 35% !important;
+// }
+// .rc-inline-block:last-child{ 
+//   width: 65% !important;
+// }
+// .rc-anchor-logo-portrait { 
+//   margin: 10px 0 0 6px !important; 
+// }

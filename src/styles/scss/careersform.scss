@@ -1,0 +1,384 @@
+// Careers and Application Form Styles
+
+// Careers Styles
+.careertop {
+  background: url(../../assets/clientbackground.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 200px 0 0;
+  h2 {
+    margin: 0 auto 30px;
+    font-size: 46px;
+    font-weight: 600;
+    letter-spacing: normal;
+    color: #fff;
+    text-transform: uppercase; 
+    width: 100%;
+  }
+  p {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: normal;
+    color: #fff;
+    margin: 0 0 30px;
+    width: 100%;
+  }
+  .careerheading {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .career-img {
+    display: flex;
+    justify-content: center;
+  }
+}
+#careers {
+  background: #f5f5f5;
+  padding: 60px 0;
+
+  h2 {
+    text-align: center;
+    margin: 0 auto 30px;
+    font-size: 46px;
+    font-weight: 600;
+    letter-spacing: normal;
+    color: #323232;
+    text-transform: uppercase;
+  }
+  h4 {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 30px auto;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: normal;
+    color: #515154;
+  }
+  p {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: normal;
+    text-align: center;
+    color: #515154;
+    margin: 0 0 30px;
+  }
+  .buildcareer {
+    //   display: flex;
+    //   justify-content: center;
+    //   align-items: center;
+
+    h2 {
+      text-align: center;
+      margin: 0 auto 60px;
+      font-size: 46px;
+      font-weight: 600;
+      letter-spacing: normal;
+      color: #7e0080;
+      text-transform: uppercase;
+    }
+    p {
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: normal;
+      text-align: center;
+      color: #515154;
+      margin: 0 !important;
+    }
+    @media (max-width: 425px) {
+      h2 {
+        font-size: 24px !important;
+      }
+    }
+  }
+  .position-content {
+    background: #fff;
+    h4 {
+      margin: 0 0 10px;
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: normal;
+      color: #323232;
+      text-transform: capitalize;
+      text-align: left;
+    }
+    p {
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: normal;
+      color: #515154;
+      text-align: left;
+      margin: 0 !important;
+    }
+    .accordion__button {
+      background-color: #fff !important;
+      position: relative !important;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+      padding: 15px 25px !important;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    .accordion__button:focus {
+      outline: 0 !important;
+      outline-offset: 0 !important;
+      background: #f1f1f1 !important;
+    }
+    .accordion__button:before,
+    .accordion__button:after {
+      position: absolute !important;
+      top: 40% !important;
+      right: 25px !important;
+      border-bottom: 2px solid #7e0080 !important;
+      border-right: 2px solid #7e0080 !important; 
+    } 
+    .accordion__button[aria-expanded='true']::before, 
+    .accordion__button[aria-selected='true']::before{
+      transform: rotate(225deg) !important; 
+    }
+    .accordion__button:before {
+      transform: rotate(45deg) !important; 
+    }
+    // .accordion__button:after {
+    //   transform: rotate(-45deg) !important;
+    //   border-bottom: 1px solid #d9d6d6 !important;
+    // }
+    .posticon {
+      width: 9%;
+      padding: 10px;
+      img {
+        width: 100%;
+        max-width: 60px;
+      }
+    }
+    .accordion__panel {
+      padding: 20px 25px !important;
+      h4 {
+        margin: 0 0 20px !important;
+      }
+      h6 {
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: normal;
+        color: #323232;
+        text-transform: capitalize;
+        margin: 0 0 20px !important;
+      }
+      p {
+        margin: 0 0 20px !important;
+      }
+    }
+    .benefits {
+      li {
+        background: url(../../assets/postionicons/tickmark.png) no-repeat;
+        background-position: left;
+        list-style: none;
+        padding: 0 0 0 30px;
+        margin: 0 0 0 -15px;
+      }
+    }
+    ul {
+      margin: 0 0 20px;
+      li {
+        font-size: 14px;
+        line-height: 2;
+      }
+    }
+    .applynow {
+      display: flex;
+      justify-content: center;
+      margin: 30px auto 15px;
+      a {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 500;
+        background: #7e0080;
+        padding: 7px 15px;
+        text-decoration: none;
+        border-radius: 5px;
+        display: block;
+        text-transform: uppercase;
+        text-align: center;
+        border: 1px solid #7e0080;
+        border-radius: 5px;
+      }
+    }
+    @media (max-width: 991px) {
+      .accordion__button {
+        padding: 15px !important;
+      }
+      .posticon {
+        width: 25%;
+        padding: 0 10px !important;
+      }
+      .accordion__button:before,
+      .accordion__button:after {
+        top: 17% !important;
+        right: 10px !important;
+      }
+    }
+    @media (max-width: 575px) {
+      .posticon {
+        width: 20%;
+      }
+    }
+    @media (max-width: 520px) {
+      .posticon {
+        width: 25%;
+      }
+    }
+    @media (max-width: 480px) {
+      .posticon {
+        width: 30%;
+      }
+    }
+    @media (max-width: 425px) {
+      .accordion__button {
+        flex-wrap: wrap;
+      }
+      .posticon {
+        padding: 0 !important;
+        margin: 0 0 15px;
+      }
+    }
+  }
+}
+
+// Application Form Styles
+.apptopbg {
+  background: url(../../assets/clientbackground.png);
+  // background: #fff;
+  background-position: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 100px 0;
+  h2 {
+    text-align: center;
+    margin: 0 auto 30px;
+    font-size: 46px;
+    font-weight: 600;
+    letter-spacing: normal;
+    color: #fff;
+    text-transform: uppercase;
+  }
+}
+#appform {
+
+  padding: 0 0 50px;
+  border-bottom: 1px solid #f4f4f4;
+  background: #f4f4f4; 
+  .form-content {
+    margin: -50px 0 0;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px #00000024;
+    background: #fff; 
+  } 
+  h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #00017a;
+    padding: 30px 15px 0 35px;
+  }
+  .iconbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 100%;
+      max-width: 60px;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  .addressdetail {
+    .row {
+      margin: 0 0 20px;
+    }
+  }
+
+  form {
+    width: 100%;
+    padding: 30px;
+    .form-control {
+      padding: 10px 15px;
+      height: 50px !important;
+      background: #f4f4f4; 
+    }
+    .input-cv {
+      margin: 2px 0 0;
+  }
+  .text-muted {
+    color: #ff0000 !important;
+  }
+    .captcha-container{
+      margin: 5px 0 0;
+      display: flex;
+      justify-content: flex-end;
+    }
+    .btn-container{
+      display: flex;
+      justify-content: center;
+      margin: 20px 0 0;
+    }
+    .submitbtn {
+      margin: 0 0 0 10px; 
+      button {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 500;
+        background: #010280;
+        padding: 7px 15px;
+        text-decoration: none;
+        border-radius: 5px;
+        display: block;
+        text-transform: uppercase;
+        text-align: center;
+        border: 1px solid #010280;
+        border-radius: 5px;
+        width: 90px;
+      }
+    }
+    @media (max-width: 767px) {
+      .submitbtn {
+        justify-content: center;
+      }
+    }
+  }
+  .backlink{
+    font-size: 16px;
+    font-weight: 500;
+    background: #010280;
+    color: #fff;
+    padding: 8px 15px 7px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 90px;
+}  
+  @media (max-width: 991px) {
+    h2 {
+      font-size: 36px;
+    }
+  }
+  @media (max-width: 575px) {
+    .form-content {
+      padding: 0;
+    }
+
+    form {
+      padding: 15px;
+    }
+    h2 {
+      font-size: 30px;
+    }
+  }
+  @media (max-width: 480px) {
+    h2 {
+      font-size: 24px;
+    }
+  }
+}
