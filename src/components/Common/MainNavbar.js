@@ -142,6 +142,7 @@ class MainNavbar extends React.Component {
                       spy={true}
                       smooth={true}
                       duration={500}
+                      className="isDisabled"
                     >
                       Explorer
                     </NavLink>
@@ -155,6 +156,7 @@ class MainNavbar extends React.Component {
                       spy={true}
                       smooth={true}
                       duration={500}
+                      className="isDisabled"
                     >
                       Wallet
                     </NavLink>
@@ -168,6 +170,7 @@ class MainNavbar extends React.Component {
                       spy={true}
                       smooth={true}
                       duration={500}
+                      className="isDisabled"
                     >
                       Faucet
                     </NavLink>
@@ -183,9 +186,15 @@ class MainNavbar extends React.Component {
                     </DropdownMenu>
                   </UncontrolledDropdown> */}
                   <NavItem className="nav-item1" id="contactbtn">
-                    <Link to="/" className="contactbtn">
+                    <NavLink  to="contactscroll"
+                      onClick={() => {
+                        this.toggleClose();
+                      }}
+                      spy={true}
+                      smooth={true}
+                      duration={500} className="contactbtn">
                       Contact
-                    </Link>
+                    </NavLink>
                   </NavItem>
                 </Nav>
               </Collapse>

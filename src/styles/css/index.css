@@ -82,7 +82,8 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 100px 0; }
+  padding: 100px 0;
+  height: 100vh; }
 
 #about .about-desc {
   display: flex;
@@ -189,6 +190,8 @@
     display: none !important; } }
 
 @media (max-width: 480px) {
+  #solutions .solutions-desc {
+    margin: 0; }
   #solutions .system-item {
     flex-wrap: wrap;
     justify-content: flex-start !important; }
@@ -198,7 +201,7 @@
       max-width: 150px; }
   #solutions .content {
     width: 100% !important;
-    padding: 15px 0; } }
+    padding: 15px 0 !important; } }
 
 @media (max-width: 414px) {
   #solutions .solutions-desc h2 {
@@ -221,8 +224,85 @@
   .sol-hide {
     display: none !important; } }
 
+.newsletterbg {
+  background: url(../../assets/backwalls/newsletterbg.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 100px 0; }
+
+#newsletter .news-desc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100%; }
+  #newsletter .news-desc .fa {
+    font-size: 40px;
+    color: #fff;
+    margin: 0 auto 30px;
+    width: 100%;
+    text-align: center; }
+  #newsletter .news-desc h2 {
+    margin: 0 0 20px;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: normal;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase; }
+  #newsletter .news-desc p {
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff; }
+  #newsletter .news-desc form {
+    width: 100%;
+    margin: 20px 30px 0; }
+  #newsletter .news-desc .form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    background: #fff; }
+  #newsletter .news-desc .form-control {
+    border: none !important;
+    padding: 5px 5px 5px 25px; }
+  #newsletter .news-desc .form-control:focus {
+    box-shadow: none !important; }
+  #newsletter .news-desc .spanText {
+    font-size: 12px !important;
+    padding-top: 5px !important;
+    color: red !important;
+    font-weight: 500 !important; }
+  #newsletter .news-desc .newsbtn {
+    font-size: 16px;
+    font-weight: 600;
+    background: #004bff !important;
+    color: #fff !important;
+    padding: 0.5rem 1rem !important;
+    text-decoration: none;
+    border-radius: 5px;
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+    border: none !important;
+    margin: 5px;
+    box-shadow: none !important; }
+  @media (max-width: 767px) {
+    #newsletter .news-desc form {
+      margin: 20px 0 0; } }
+  @media (max-width: 480px) {
+    #newsletter .news-desc .form-group {
+      background: transparent;
+      flex-wrap: wrap; }
+    #newsletter .news-desc .newsbtn {
+      margin: 15px auto 0;
+      width: 150pxnfv; } }
+
 .contactbg {
-  background: url(../../assets/aboutbackground.png);
+  background: url(../../assets/backwalls/contactbg.png);
   background: #010280;
   padding: 70px 0; }
 
@@ -232,19 +312,39 @@
   border-radius: 10px; }
 
 #contact .ctrycode {
-  position: relative; }
+  display: flex;
+  justify-content: flex-start;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  align-items: center;
+  padding: 0 0 0 15px; }
+  #contact .ctrycode .form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border: none;
+    outline: 0;
+    box-shadow: none; }
 
 #contact .codeplace {
-  position: absolute;
-  left: 15px;
   color: #000;
-  top: 14px;
-  width: 70px;
-  text-align: right;
-  padding-right: 8px; }
+  min-width: 20px;
+  line-height: 1.6;
+  max-width: 45px;
+  text-align: right; }
 
 #contact .input-setphone {
-  padding: 5px 0 5px 80px !important; }
+  padding: 0 4px !important;
+  height: 40px !important;
+  display: block;
+  width: 96%;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  border: none !important;
+  background-color: #fff;
+  background-clip: padding-box;
+  border-radius: unset; }
 
 #contact .iconbox {
   display: flex;
@@ -403,7 +503,13 @@
 
 @media (max-width: 480px) {
   #contact h2 {
-    font-size: 24px; } }
+    font-size: 24px; }
+  #contact .ctrycode {
+    justify-content: space-between; }
+  #contact .input-setphone {
+    width: 80%; }
+  #contact form {
+    padding: 0 !important; } }
 
 .mapbg {
   background: #f4f4f4;
@@ -414,11 +520,11 @@
     margin: 0 auto;
     display: block; }
 
-.footer {
-  padding: 70px 0 40px; }
-  .footer .container {
+#footer {
+  padding: 50px 0; }
+  #footer .container {
     position: relative; }
-  .footer .vert-move {
+  #footer .vert-move {
     -webkit-animation: mover 2s infinite alternate;
     animation: mover 2s infinite alternate; }
 
@@ -433,149 +539,59 @@
     transform: translateY(0); }
   100% {
     transform: translateY(-10px); } }
-  .footer .gotop {
+  #footer .gotop {
     position: absolute;
     right: 0;
     bottom: -25px; }
-    .footer .gotop a {
+    #footer .gotop a {
       color: #01027f !important;
       font-size: 30px; }
-  .footer .footer-container {
-    display: flex;
-    justify-content: space-between;
-    width: 100%; }
-  .footer .footer-left {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    width: 60%; }
-  .footer .footer-right {
-    width: 40%;
-    display: flex;
-    justify-content: flex-end; }
-  .footer .footer-link {
-    margin: 0 0 20px;
-    width: 100%; }
-    .footer .footer-link ul {
-      margin: 0 0 0 -40px; }
-      .footer .footer-link ul li {
-        display: inline-block;
-        list-style: none;
-        margin: 0 10px; }
-        .footer .footer-link ul li a {
-          font-size: 16px;
-          font-weight: 600;
-          text-transform: uppercase;
-          color: #515154;
-          text-decoration: none;
-          cursor: pointer; }
-      .footer .footer-link ul li:first-child {
-        margin: 0 10px 0 0; }
-  .footer p {
-    font-size: 16px;
-    color: #939598; }
+  #footer .copyright img {
+    width: 100%;
+    margin: 0 0 20px; }
+  #footer .copyright p {
+    width: 200px; }
+  #footer .footer-item h6 {
+    margin: 0 auto 20px;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: normal;
+    color: #000;
+    text-transform: uppercase; }
+  #footer .footer-item ul {
+    padding: 0; }
+  #footer .footer-item li {
+    display: block;
+    padding: 5px 0;
+    list-style: none; }
+  #footer .footer-item a {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: normal;
+    color: #58595b;
+    cursor: pointer; }
   @media (max-width: 991px) {
-    .footer .footer-container {
-      justify-content: center;
-      flex-wrap: wrap; }
-    .footer .footer-left {
-      justify-content: center;
-      width: 100%; }
-    .footer .footer-right {
-      width: 100%;
-      display: flex;
-      justify-content: center; }
-    .footer .footer-link {
-      justify-content: center; }
-      .footer .footer-link li {
-        width: 33.33%;
-        text-align: center;
-        margin: 0 0 10px !important; } }
-  @media (max-width: 991px) and (max-width: 575px) {
-    .footer .footer-link li {
-      width: 100%; } }
-  @media (max-width: 991px) {
-    .footer p {
-      text-align: center; } }
+    #footer .footer-item h6 {
+      font-size: 20px; } }
+  @media (max-width: 767px) {
+    #footer .copyright {
+      margin: 0 0 40px;
+      text-align: center; }
+      #footer .copyright img {
+        margin: 0 auto 20px;
+        max-width: 250px; }
+      #footer .copyright p {
+        display: block;
+        margin: 0 auto;
+        width: 70%; } }
   @media (max-width: 700px) {
-    .footer .gotop {
+    #footer .gotop {
       position: static;
       text-align: center;
       margin: 20px 0 0; } }
-
-@media (max-width: 700px) {
-  .footer {
-    padding: 70px 0 10px; } }
-
-.social-circle {
-  display: flex;
-  justify-content: center;
-  width: 100%; }
-  .social-circle .iconbg {
-    position: relative;
-    margin: 0 5px;
-    border-radius: 10%;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    padding: 8px;
-    height: 40px;
-    width: 40px; }
-  .social-circle .facebook {
-    background: #4167b1; }
-  .social-circle .facebook:hover {
-    background: #1877f2; }
-  .social-circle .linkedin {
-    background: #2a445d; }
-  .social-circle .linkedin:hover {
-    background: #4671ae; }
-  .social-circle .twitter {
-    background: #00aced; }
-  .social-circle .twitter:hover {
-    background: #1dcaff; }
-  .social-circle .youtube {
-    background: #90030c; }
-  .social-circle .youtube:hover {
-    background: #bf2626; }
-  .social-circle .medium {
-    background: #00ad6c; }
-  .social-circle .medium:hover {
-    background: #00c967; }
-  .social-circle .reddit {
-    background: #ea552d; }
-  .social-circle .reddit:hover {
-    background: #f76937; }
-  .social-circle .github {
-    background: #000; }
-  .social-circle .github:hover {
-    background: #313131; }
-  .social-circle .researchgate {
-    background: #029a82; }
-  .social-circle .researchgate:hover {
-    background: #00d0af; }
-  .social-circle .socialicon {
-    width: 100%; }
-  .social-circle a:hover .socialicon {
-    -moz-transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    -ms--transform: rotate(360deg);
-    transform: rotate(360deg);
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -o-transition: all 1s;
-    -ms-transition: all 1s;
-    transition: all 1s; }
-  @media (max-width: 414px) {
-    .social-circle .iconbg {
-      margin: 0 5px 10px; } }
-
-@media (max-width: 414px) {
-  .footer-social-link {
-    width: 100%;
-    max-width: 200px;
-    margin: 0 auto; }
-  .social-circle {
-    flex-wrap: wrap; } }
+  @media (max-width: 480px) {
+    #footer .copyright p {
+      width: 100%; } }
 
 .comingsoon {
   display: flex;
@@ -617,6 +633,10 @@
 
 .bgcolornav .nav-links a {
   cursor: pointer; }
+
+.isDisabled {
+  cursor: not-allowed !important;
+  opacity: 0.5; }
 
 .loader-hidden {
   display: none; }
@@ -702,14 +722,6 @@ body {
   filter: blur(0);
   transform: scale(1); }
 
-/* Clip Background Image */
-/* Animate Background Image */
-/* Activate hardware acceleration for smoother animations */
-/* Animate Background Image */
-/* For increasing performance 
-    ID/Class should've been used. 
-    For a small demo 
-    it's okaish for now */
 .Toastify__toast-container--top-right {
   top: 4.1rem !important; }
 
@@ -817,295 +829,3 @@ nav {
 
 #navbarToggler {
   display: none; }
-
-.careertop {
-  background: url(../../assets/clientbackground.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 200px 0 0; }
-  .careertop h2 {
-    margin: 0 auto 30px;
-    font-size: 46px;
-    font-weight: 600;
-    letter-spacing: normal;
-    color: #fff;
-    text-transform: uppercase;
-    width: 100%; }
-  .careertop p {
-    font-size: 20px;
-    font-weight: 400;
-    letter-spacing: normal;
-    color: #fff;
-    margin: 0 0 30px;
-    width: 100%; }
-  .careertop .careerheading {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap; }
-  .careertop .career-img {
-    display: flex;
-    justify-content: center; }
-
-#careers {
-  background: #f5f5f5;
-  padding: 60px 0; }
-  #careers h2 {
-    text-align: center;
-    margin: 0 auto 30px;
-    font-size: 46px;
-    font-weight: 600;
-    letter-spacing: normal;
-    color: #323232;
-    text-transform: uppercase; }
-  #careers h4 {
-    text-transform: uppercase;
-    text-align: center;
-    margin: 30px auto;
-    font-size: 24px;
-    font-weight: 600;
-    letter-spacing: normal;
-    color: #515154; }
-  #careers p {
-    font-size: 16px;
-    font-weight: 400;
-    letter-spacing: normal;
-    text-align: center;
-    color: #515154;
-    margin: 0 0 30px; }
-  #careers .buildcareer h2 {
-    text-align: center;
-    margin: 0 auto 60px;
-    font-size: 46px;
-    font-weight: 600;
-    letter-spacing: normal;
-    color: #7e0080;
-    text-transform: uppercase; }
-  #careers .buildcareer p {
-    font-size: 16px;
-    font-weight: 400;
-    letter-spacing: normal;
-    text-align: center;
-    color: #515154;
-    margin: 0 !important; }
-  @media (max-width: 425px) {
-    #careers .buildcareer h2 {
-      font-size: 24px !important; } }
-  #careers .position-content {
-    background: #fff; }
-    #careers .position-content h4 {
-      margin: 0 0 10px;
-      font-size: 18px;
-      font-weight: 600;
-      letter-spacing: normal;
-      color: #323232;
-      text-transform: capitalize;
-      text-align: left; }
-    #careers .position-content p {
-      font-size: 14px;
-      font-weight: 400;
-      letter-spacing: normal;
-      color: #515154;
-      text-align: left;
-      margin: 0 !important; }
-    #careers .position-content .accordion__button {
-      background-color: #fff !important;
-      position: relative !important;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
-      padding: 15px 25px !important;
-      display: flex;
-      justify-content: flex-start;
-      align-items: center; }
-    #careers .position-content .accordion__button:focus {
-      outline: 0 !important;
-      outline-offset: 0 !important;
-      background: #f1f1f1 !important; }
-    #careers .position-content .accordion__button:before,
-    #careers .position-content .accordion__button:after {
-      position: absolute !important;
-      top: 40% !important;
-      right: 25px !important;
-      border-bottom: 2px solid #7e0080 !important;
-      border-right: 2px solid #7e0080 !important; }
-    #careers .position-content .accordion__button[aria-expanded='true']::before,
-    #careers .position-content .accordion__button[aria-selected='true']::before {
-      transform: rotate(225deg) !important; }
-    #careers .position-content .accordion__button:before {
-      transform: rotate(45deg) !important; }
-    #careers .position-content .posticon {
-      width: 9%;
-      padding: 10px; }
-      #careers .position-content .posticon img {
-        width: 100%;
-        max-width: 60px; }
-    #careers .position-content .accordion__panel {
-      padding: 20px 25px !important; }
-      #careers .position-content .accordion__panel h4 {
-        margin: 0 0 20px !important; }
-      #careers .position-content .accordion__panel h6 {
-        font-size: 16px;
-        font-weight: 600;
-        letter-spacing: normal;
-        color: #323232;
-        text-transform: capitalize;
-        margin: 0 0 20px !important; }
-      #careers .position-content .accordion__panel p {
-        margin: 0 0 20px !important; }
-    #careers .position-content .benefits li {
-      background: url(../../assets/postionicons/tickmark.png) no-repeat;
-      background-position: left;
-      list-style: none;
-      padding: 0 0 0 30px;
-      margin: 0 0 0 -15px; }
-    #careers .position-content ul {
-      margin: 0 0 20px; }
-      #careers .position-content ul li {
-        font-size: 14px;
-        line-height: 2; }
-    #careers .position-content .applynow {
-      display: flex;
-      justify-content: center;
-      margin: 30px auto 15px; }
-      #careers .position-content .applynow a {
-        color: #fff;
-        font-size: 16px;
-        font-weight: 500;
-        background: #7e0080;
-        padding: 7px 15px;
-        text-decoration: none;
-        border-radius: 5px;
-        display: block;
-        text-transform: uppercase;
-        text-align: center;
-        border: 1px solid #7e0080;
-        border-radius: 5px; }
-    @media (max-width: 991px) {
-      #careers .position-content .accordion__button {
-        padding: 15px !important; }
-      #careers .position-content .posticon {
-        width: 25%;
-        padding: 0 10px !important; }
-      #careers .position-content .accordion__button:before,
-      #careers .position-content .accordion__button:after {
-        top: 17% !important;
-        right: 10px !important; } }
-    @media (max-width: 575px) {
-      #careers .position-content .posticon {
-        width: 20%; } }
-    @media (max-width: 520px) {
-      #careers .position-content .posticon {
-        width: 25%; } }
-    @media (max-width: 480px) {
-      #careers .position-content .posticon {
-        width: 30%; } }
-    @media (max-width: 425px) {
-      #careers .position-content .accordion__button {
-        flex-wrap: wrap; }
-      #careers .position-content .posticon {
-        padding: 0 !important;
-        margin: 0 0 15px; } }
-
-.apptopbg {
-  background: url(../../assets/clientbackground.png);
-  background-position: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 100px 0; }
-  .apptopbg h2 {
-    text-align: center;
-    margin: 0 auto 30px;
-    font-size: 46px;
-    font-weight: 600;
-    letter-spacing: normal;
-    color: #fff;
-    text-transform: uppercase; }
-
-#appform {
-  padding: 0 0 50px;
-  border-bottom: 1px solid #f4f4f4;
-  background: #f4f4f4; }
-  #appform .form-content {
-    margin: -50px 0 0;
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px 0px #00000024;
-    background: #fff; }
-  #appform h4 {
-    font-size: 18px;
-    font-weight: 600;
-    color: #00017a;
-    padding: 30px 15px 0 35px; }
-  #appform .iconbox {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    #appform .iconbox img {
-      width: 100%;
-      max-width: 60px;
-      display: block;
-      margin: 0 auto; }
-  #appform .addressdetail .row {
-    margin: 0 0 20px; }
-  #appform form {
-    width: 100%;
-    padding: 30px; }
-    #appform form .form-control {
-      padding: 10px 15px;
-      height: 50px !important;
-      background: #f4f4f4; }
-    #appform form .input-cv {
-      margin: 2px 0 0; }
-    #appform form .text-muted {
-      color: #ff0000 !important; }
-    #appform form .captcha-container {
-      margin: 5px 0 0;
-      display: flex;
-      justify-content: flex-end; }
-    #appform form .btn-container {
-      display: flex;
-      justify-content: center;
-      margin: 20px 0 0; }
-    #appform form .submitbtn {
-      margin: 0 0 0 10px; }
-      #appform form .submitbtn button {
-        color: #fff;
-        font-size: 16px;
-        font-weight: 500;
-        background: #010280;
-        padding: 7px 15px;
-        text-decoration: none;
-        border-radius: 5px;
-        display: block;
-        text-transform: uppercase;
-        text-align: center;
-        border: 1px solid #010280;
-        border-radius: 5px;
-        width: 90px; }
-    @media (max-width: 767px) {
-      #appform form .submitbtn {
-        justify-content: center; } }
-  #appform .backlink {
-    font-size: 16px;
-    font-weight: 500;
-    background: #010280;
-    color: #fff;
-    padding: 8px 15px 7px;
-    text-decoration: none;
-    border-radius: 5px;
-    text-transform: uppercase;
-    text-align: center;
-    width: 90px; }
-  @media (max-width: 991px) {
-    #appform h2 {
-      font-size: 36px; } }
-  @media (max-width: 575px) {
-    #appform .form-content {
-      padding: 0; }
-    #appform form {
-      padding: 15px; }
-    #appform h2 {
-      font-size: 30px; } }
-  @media (max-width: 480px) {
-    #appform h2 {
-      font-size: 24px; } }

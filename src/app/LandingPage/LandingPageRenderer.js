@@ -6,6 +6,8 @@ import MainNavbar from "../../components/Common/MainNavbar";
 import Footer from "../../components/Common/Footer";
 import About from "../../components/About/About";
 import AntliaSolutions from "../../components/AntliaSolutions/AntliaSolutions";
+import NewsLetter from "../../components/NewsLetter/index";
+import ContactUs from "../../components/ContactUs/index";
 
 
  
@@ -21,6 +23,10 @@ class LandingPageRenderer extends PureComponent {
           </Element>
          <Element className="solutionscroll">
             <AntliaSolutions/>
+          </Element>
+          <NewsLetter/>
+          <Element className="contactscroll">
+            <ContactUs/>
           </Element>
            {/*  <Element className="focusareasscroll">
             <FocusArea/>

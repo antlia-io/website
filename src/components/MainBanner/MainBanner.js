@@ -16,7 +16,7 @@ class MainBanner extends React.Component {
                     An Interoperable &amp; Scalable Blockchain for cross-chain
                     data and assets sharing.
                   </p>
-                  <Button className="demobtn">Demo</Button>
+                  <Button className="demobtn isDisabled">Demo</Button>
                 </div>
               </Col>
               <Col lg={6} md={12}>

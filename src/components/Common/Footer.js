@@ -1,13 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { animateScroll as scroll } from "react-scroll";
-import Linkedin from "../../assets/socialicons/Linkedin.png";
-import facebook from "../../assets/socialicons/facebook.png";
-import twitter from "../../assets/socialicons/twitter.png";
-import medium from "../../assets/socialicons/medium.png";
-import youtube from "../../assets/socialicons/youtube.png";
-import reddit from "../../assets/socialicons/reddit.png";
-import github from "../../assets/socialicons/github.png";
+import {Row, Col} from 'reactstrap';
+import { animateScroll as scroll, Link as NavLink } from "react-scroll";
+import logo from '../../assets/logo/color.svg'
 
 class Footer extends React.Component {
   render() {
@@ -18,139 +13,52 @@ class Footer extends React.Component {
       <div>
         <section>
           {/* Footer section */}
-          <div className="footer">
+          <div id="footer">
             <div className="container">
-              <div className="footer-container">
-                <div className="footer-left">
-                  <div className="footer-link">
-                    <ul>
-                      <li>
-                        <a href="https://www.rnssol.com" target="_blank" rel="noopener noreferrer">
-                          RNS Solutions
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://rait.rnssol.com/" target="_blank" rel="noopener noreferrer">
-                          RAIET
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://medium.com/@rnssol"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          Blogs
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="right-reserved">
-                    <p>
-                      © 2019 Antlia. All Rights Reserved | Powered by
-                      RNS Solutions
-                    </p>
-                  </div>
+            <Row>
+              <Col lg={3} md={3} sm={12}>
+                <div className="copyright">
+                  <img src={logo} alt="Antlia"/>
+                  <p>&copy; Copyright www.antlia.io
+                  All Rights Reserved.
+                  Powered by <a href="https://www.rnssol.com/" target="_blank" rel="noopener noreferrer">RNS Solutions</a></p>
                 </div>
-                <div className="footer-right">
-                  <div className="footer-social-link">
-                    <div className="social-circle">
-                      <a
-                        href="https://www.facebook.com/rnssol/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <div className="facebook iconbg">
-                          <img
-                            src={facebook}
-                            className="socialicon"
-                            alt="Linkedin"
-                          />
-                        </div>
-                      </a>
-                      <a
-                        href="https://twitter.com/rnssol"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <div className="twitter iconbg">
-                          <img
-                            src={twitter}
-                            className="socialicon"
-                            alt="Linkedin"
-                          />
-                        </div>
-                      </a>
-                      <a
-                        href="https://www.linkedin.com/company/rnssol/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <div className="linkedin iconbg">
-                          <img
-                            src={Linkedin}
-                            className="socialicon"
-                            alt="Linkedin"
-                          />
-                        </div>
-                      </a>
-                      <a
-                        href="https://www.youtube.com/c/RNSSolutions"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <div className="youtube iconbg">
-                          <img
-                            src={youtube}
-                            className="socialicon"
-                            alt="Linkedin"
-                          />
-                        </div>
-                      </a>
-                      <a
-                        href="https://medium.com/@rnssol"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <div className="medium iconbg">
-                          <img
-                            src={medium}
-                            className="socialicon"
-                            alt="Linkedin"
-                          />
-                        </div>
-                      </a>
-                      <a
-                        href="https://www.reddit.com/user/rnssol"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <div className="reddit iconbg">
-                          <img
-                            src={reddit}
-                            className="socialicon"
-                            alt="Linkedin"
-                          />
-                        </div>
-                      </a>
-                      <a
-                        href="https://github.com/RNSSolution"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <div className="github iconbg">
-                          <img
-                            src={github}
-                            className="socialicon"
-                            alt="Linkedin"
-                          />
-                        </div>
-                      </a>
-                    </div>
-                  </div>
+              </Col>
+              <Col lg={3} md={3} sm={4}>
+                <div className="footer-item">
+                  <h6>Navigation</h6>
+                  <ul>
+                    <li><NavLink to="aboutscroll" spy={true} smooth={true} duration={500}>About Us</NavLink></li>
+                    <li><NavLink to="contactscroll" spy={true} smooth={true} duration={500}>Contact Us</NavLink></li>
+                    <li><a href="/" className="isDisabled">Careers</a></li>
+                    <li><Link to="/" className="isDisabled">Privacy Policy</Link></li>
+                  </ul>
                 </div>
-              </div>
-              <div className="gotop vert-move">
+              </Col>
+              <Col lg={3} md={3} sm={4}>
+              <div className="footer-item">
+                  <h6>Follow Us</h6>
+                  <ul>
+                    <li><a href="/" className="isDisabled">Facebook</a></li>
+                    <li><a href="/" className="isDisabled">Twitter</a></li>
+                    <li><a href="/" className="isDisabled">YouTube</a></li>
+                    <li><a href="/" className="isDisabled">Linkedin</a></li>
+                  </ul>
+                </div>
+              </Col>
+              <Col lg={3} md={3} sm={4}>
+              <div className="footer-item">
+                  <h6>News Feeds</h6>
+                  <ul>
+                    <li><a href="https://www.rnssol.com/" target="_blank" rel="noopener noreferrer">RNS Solutions</a></li>
+                    <li><a href="https://rait.rnssol.com/" target="_blank" rel="noopener noreferrer">RAIET</a></li>
+                    <li><a href="https://medium.com/@rnssol" target="_blank" rel="noopener noreferrer">Blogs</a></li>
+                 
+                  </ul>
+                </div>
+              </Col>
+            </Row>
+            <div className="gotop vert-move">
                   <Link to="/" onClick={scrollToTop}><i className="fa fa-arrow-up"></i></Link>
                 </div>
             </div>
