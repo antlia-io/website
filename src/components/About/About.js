@@ -13,11 +13,11 @@ class About extends React.Component {
                 <div className="about-desc">
                   <h2>Antlia</h2>
                   <p>
-                    Antlia Protocol presents a solution for Blockchain
+                    ANTLIA Protocol presents a solution for Blockchain
                     Interoperability, Scalability and Oracles. It is a truly
                     Decentralized Interoperable Blockchain Protocol for
                     connectivity, exchange of data/assets and communication. It
-                    provides a Blockchain-to-Blockchain (Bc2Bc) solution. Antlia
+                    provides a Blockchain-to-Blockchain (Bc2Bc) solution. ANTLIA
                     Protocol presents a solution for Blockchain
                     Interoperability, Scalability and Oracles.
                   </p>
