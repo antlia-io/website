@@ -51,7 +51,7 @@ class Footer extends React.Component {
                   <h6>News Feeds</h6>
                   <ul>
                     <li><a href="https://www.rnssol.com/" target="_blank" rel="noopener noreferrer">RNS Solutions</a></li>
-                    <li><a href="https://rait.rnssol.com/" target="_blank" rel="noopener noreferrer">RAIET</a></li>
+                    <li><a href="https://raiet.rnssol.com/" target="_blank" rel="noopener noreferrer">RAIET</a></li>
                     <li><a href="https://medium.com/@rnssol" target="_blank" rel="noopener noreferrer">Blogs</a></li>
                  
                   </ul>
