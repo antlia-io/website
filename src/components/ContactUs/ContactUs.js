@@ -6,7 +6,7 @@ import ReCAPTCHA from "react-google-recaptcha";
 import location from "../../assets/socialicons/location.png";
 import mail from "../../assets/socialicons/mail.png";
 import phone1 from "../../assets/socialicons/phone.png";
-import Loader from "react-loaders";
+// import Loader from "react-loaders";
 import validate from "validate.js";
 import { FormattedMessage } from "react-intl";
 import { injectIntl } from "react-intl";
@@ -200,7 +200,7 @@ class ContactUs extends React.Component {
     this.setState({ code: "+" + e.target.value, Country: e.target.value });
   }
   render() {
-    const { contactUsLoading } = this.props;
+    // const { contactUsLoading } = this.props;
     const { name, email, message, phone, subject, country, selectedCountry } = this.state;
 
     let errors = validate(
@@ -738,17 +738,17 @@ class ContactUs extends React.Component {
                               onClick={this.submitFormHandler}
                               type="submit"
                             >
-                              {contactUsLoading ? (
+                              {/* {contactUsLoading ? (
                                 <Loader
                                   type="ball-beat"
                                   active={contactUsLoading}
                                 />
-                              ) : (
+                              ) : ( */}
                                   <FormattedMessage
                                     id="contact.sendbtn"
                                     defaultMessage="Send Message"
                                   />
-                                )}
+                                {/* )} */}
                             </Button>
                           </div>
                         </Col>

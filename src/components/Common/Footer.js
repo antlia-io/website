@@ -30,8 +30,8 @@ class Footer extends React.Component {
                   <ul>
                     <li><NavLink to="aboutscroll" spy={true} smooth={true} duration={500}>About Us</NavLink></li>
                     <li><NavLink to="contactscroll" spy={true} smooth={true} duration={500}>Contact Us</NavLink></li>
-                    <li><a href="/" className="isDisabled">Careers</a></li>
-                    <li><Link to="/" className="isDisabled">Privacy Policy</Link></li>
+                    <li><Link to="" className="isDisabled">Careers</Link></li>
+                    <li><Link to="" className="isDisabled">Privacy Policy</Link></li>
                   </ul>
                 </div>
               </Col>
@@ -39,10 +39,12 @@ class Footer extends React.Component {
               <div className="footer-item">
                   <h6>Follow Us</h6>
                   <ul>
-                    <li><a href="/" className="isDisabled">Facebook</a></li>
-                    <li><a href="/" className="isDisabled">Twitter</a></li>
-                    <li><a href="/" className="isDisabled">YouTube</a></li>
-                    <li><a href="/" className="isDisabled">Linkedin</a></li>
+                    <li><a href="https://www.facebook.com/AntliaOfficial/" target="_blank" className="">Facebook</a></li>
+                    <li><a href="https://twitter.com/antlia_chain" target="_blank">Twitter</a></li>
+                    <li><a href="https://www.reddit.com/user/AntliaProtocol" target="_blank">Reddit</a></li>
+                    <li><a href="https://www.linkedin.com/company/antliaofficial" target="_blank">Linkedin</a></li>
+                    <li><a href="https://github.com/antlia-io " target="_blank">Github</a></li>
+                    <li><a href="https://t.me/Antlia_Official" target="_blank">Telegram</a></li>
                   </ul>
                 </div>
               </Col>
@@ -51,7 +53,7 @@ class Footer extends React.Component {
                   <h6>News Feeds</h6>
                   <ul>
                     <li><a href="https://www.rnssol.com/" target="_blank" rel="noopener noreferrer">RNS Solutions</a></li>
-                    <li><a href="https://rait.rnssol.com/" target="_blank" rel="noopener noreferrer">RAIET</a></li>
+                    <li><a href="https://raiet.rnssol.com/" target="_blank" rel="noopener noreferrer">RAIET</a></li>
                     <li><a href="https://medium.com/@rnssol" target="_blank" rel="noopener noreferrer">Blogs</a></li>
                  
                   </ul>
