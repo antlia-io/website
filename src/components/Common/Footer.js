@@ -39,12 +39,12 @@ class Footer extends React.Component {
               <div className="footer-item">
                   <h6>Follow Us</h6>
                   <ul>
-                    <li><a href="https://www.facebook.com/AntliaOfficial/" target="_blank" className="">Facebook</a></li>
-                    <li><a href="https://twitter.com/antlia_chain" target="_blank">Twitter</a></li>
-                    <li><a href="https://www.reddit.com/user/AntliaProtocol" target="_blank">Reddit</a></li>
-                    <li><a href="https://www.linkedin.com/company/antliaofficial" target="_blank">Linkedin</a></li>
-                    <li><a href="https://github.com/antlia-io " target="_blank">Github</a></li>
-                    <li><a href="https://t.me/Antlia_Official" target="_blank">Telegram</a></li>
+                    <li><a href="https://www.facebook.com/AntliaOfficial/" target="_blank" rel="noopener noreferrer" className="">Facebook</a></li>
+                    <li><a href="https://twitter.com/antlia_chain" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+                    <li><a href="https://www.reddit.com/user/AntliaProtocol" target="_blank" rel="noopener noreferrer">Reddit</a></li>
+                    <li><a href="https://www.linkedin.com/company/antliaofficial" target="_blank" rel="noopener noreferrer">Linkedin</a></li>
+                    <li><a href="https://github.com/antlia-io " target="_blank" rel="noopener noreferrer">Github</a></li>
+                    <li><a href="https://t.me/Antlia_Official" target="_blank" rel="noopener noreferrer">Telegram</a></li>
                   </ul>
                 </div>
               </Col>
