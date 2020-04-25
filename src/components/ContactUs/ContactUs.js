@@ -710,7 +710,7 @@ class ContactUs extends React.Component {
                               }}
                               className="g-recaptcha"
                               data-theme="light"
-                              sitekey="6LcHhcEUAAAAAFPrNntGvpgGxIGiS1WgXwUxEByS"
+                              sitekey="6LcMJWcUAAAAAPjW5BZV6BdS1f35y1cIAy9b3F2a"
                               // sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
                               onChange={this.onCaptchaHandler}
                               height="100px"
