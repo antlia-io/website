@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c4d9d8710d95f10f367d6256a5bc790f",
+    "revision": "521a1f1fdaacc4b8b6ecc43caed8a8e8",
     "url": "/index.html"
   },
   {
-    "revision": "f1a1ab6a944549cae823",
-    "url": "/static/css/2.de4f9816.chunk.css"
+    "revision": "0d49b9703d4c63183879",
+    "url": "/static/css/2.dbebea1c.chunk.css"
   },
   {
-    "revision": "90abd0ad63a135676966",
+    "revision": "63491509cb04f1d53f57",
     "url": "/static/css/main.f422e050.chunk.css"
   },
   {
-    "revision": "f1a1ab6a944549cae823",
-    "url": "/static/js/2.03eed4fe.chunk.js"
+    "revision": "0d49b9703d4c63183879",
+    "url": "/static/js/2.40c7f341.chunk.js"
   },
   {
-    "revision": "90abd0ad63a135676966",
-    "url": "/static/js/main.99f6886d.chunk.js"
+    "revision": "63491509cb04f1d53f57",
+    "url": "/static/js/main.1fe069f3.chunk.js"
   },
   {
     "revision": "1b785f6124d7d8618208",
@@ -45,7 +45,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   },
   {
     "revision": "35a67cd56847e4e84f19b068bf53c0c6",
-    "url": "/static/media/interoperability.35a67cd5.svg"
+    "url": "/static/media/interoperability solution.35a67cd5.svg"
   },
   {
     "revision": "4297812c628cc994febef6b1161f6a82",
@@ -53,7 +53,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   },
   {
     "revision": "75460b4a5e39e06e2bd2010a7c95c4f2",
-    "url": "/static/media/oracles.75460b4a.svg"
+    "url": "/static/media/oracle blockchain.75460b4a.svg"
   },
   {
     "revision": "04eb8fc57f27498e5ae37523e3bfb2c7",
@@ -66,10 +66,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "2feb69ccb596730c72920c6ba3e37ef8",
     "url": "/static/media/revicons.2feb69cc.eot"
-  },
-  {
-    "revision": "bab9cdfddc3a551b97893651558e6ae2",
-    "url": "/static/media/scalability.bab9cdfd.svg"
   },
   {
     "revision": "b7c9e1e479de3b53f1e4e30ebac2403a",
@@ -86,6 +82,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "f97e3bbf73254b0112091d0192f17aec",
     "url": "/static/media/slick.f97e3bbf.svg"
+  },
+  {
+    "revision": "bab9cdfddc3a551b97893651558e6ae2",
+    "url": "/static/media/software scalability.bab9cdfd.svg"
   },
   {
     "revision": "0514e710e4585979e56e9d02e0bf58b3",

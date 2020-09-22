@@ -1,8 +1,8 @@
 import React from "react";
 import { Row, Col } from "reactstrap";
-import interoperability from '../../assets/antliasolutions/interoperability.svg';
-import scalability from '../../assets/antliasolutions/scalability.svg';
-import oracles from '../../assets/antliasolutions/oracles.svg';
+import interoperability from '../../assets/antliasolutions/interoperability solution.svg';
+import scalability from '../../assets/antliasolutions/software scalability.svg';
+import oracles from '../../assets/antliasolutions/oracle blockchain.svg';
 import solutions from '../../assets/antliasolutions/solutions.svg';
 
 class AntliaSolutions extends React.Component {
@@ -17,7 +17,7 @@ class AntliaSolutions extends React.Component {
                   <h2>Antlia Solving Blockchain Challenges</h2>
                   <div className="system-item">
                     <div className="icon">
-                      <img src={interoperability} alt="Interoperability" />
+                      <img src={interoperability} alt="blockchain data interoperability" />
                     </div>
                     <div className="content">
                       <h4>Interoperability:</h4>

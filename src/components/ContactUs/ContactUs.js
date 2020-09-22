@@ -200,7 +200,7 @@ class ContactUs extends React.Component {
     this.setState({ code: "+" + e.target.value, Country: e.target.value });
   }
   render() {
-    const { contactUsLoading } = this.props;
+    // const { contactUsLoading } = this.props;
     const { name, email, message, phone, subject, country, selectedCountry } = this.state;
 
     let errors = validate(
@@ -730,7 +730,7 @@ class ContactUs extends React.Component {
                               }}
                               className="g-recaptcha"
                               data-theme="light"
-                              sitekey="6LcHhcEUAAAAAFPrNntGvpgGxIGiS1WgXwUxEByS"
+                              sitekey="6LcMJWcUAAAAAPjW5BZV6BdS1f35y1cIAy9b3F2a"
                               // sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
                               onChange={this.onCaptchaHandler}
                               height="100px"
@@ -758,17 +758,17 @@ class ContactUs extends React.Component {
                               onClick={this.submitFormHandler}
                               type="submit"
                             >
-                              {contactUsLoading ? (
+                              {/* {contactUsLoading ? (
                                 <Loader
                                   type="ball-beat"
                                   active={contactUsLoading}
                                 />
-                              ) : (
+                              ) : ( */}
                                   <FormattedMessage
                                     id="contact.sendbtn"
                                     defaultMessage="Send Message"
                                   />
-                                )}
+                                {/* )} */}
                             </Button>
                           </div>
                         </Col>
