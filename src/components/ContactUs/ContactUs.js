@@ -3,9 +3,9 @@ import { Row, Col, Form, FormGroup, Input, FormText, Button } from "reactstrap";
 // import ReactPhoneInput from "react-phone-input-2";
 // import ReactFlagsSelect from "react-flags-select";
 import ReCAPTCHA from "react-google-recaptcha";
-import location from "../../assets/socialicons/location.png";
+// import location from "../../assets/socialicons/location.png";
 import mail from "../../assets/socialicons/mail.png";
-import phone1 from "../../assets/socialicons/phone.png";
+// import phone1 from "../../assets/socialicons/phone.png";
 import Loader from "react-loaders";
 import validate from "validate.js";
 import { FormattedMessage } from "react-intl";
@@ -105,7 +105,7 @@ class ContactUs extends React.Component {
     country: "",
     phone: "",
     value: "",
-    selectedCountry : '',
+    selectedCountry: '',
     touched: {
       email: false,
       name: false,
@@ -114,7 +114,7 @@ class ContactUs extends React.Component {
       country: false,
       phone: false,
       // value: false,
-      selectedCountry : false,
+      selectedCountry: false,
     },
     errors: {}
   };
@@ -128,7 +128,7 @@ class ContactUs extends React.Component {
     });
   };
 
-  
+
 
   onPhoneHandler = (event) => {
     const re = /^[0-9\b]+$/;
@@ -155,12 +155,12 @@ class ContactUs extends React.Component {
         name: "",
         email: "",
         subject: "",
-        code :'--',
+        code: '--',
         message: "",
         selectedCountry: "",
         phone: "",
-        value :'',
-        countryCode :'',
+        value: '',
+        countryCode: '',
         errors: {},
         touched: {
           email: false,
@@ -184,7 +184,7 @@ class ContactUs extends React.Component {
     });
   };
 
-  onhandleBlur = event =>{
+  onhandleBlur = event => {
     this.setState({
       touched: { ...this.state.touched, selectedCountry: true }
     });
@@ -212,7 +212,7 @@ class ContactUs extends React.Component {
         phone: this.state.phone,
         country: this.state.country,
         // value: this.state.value,
-        selectedCountry : selectedCountry
+        selectedCountry: selectedCountry
       },
       schema
     );
@@ -242,7 +242,7 @@ class ContactUs extends React.Component {
       id: "contact.phonenumber",
       defaultMessage: "Phone Number*"
     });
-    
+
 
     return (
       <div>
@@ -265,7 +265,7 @@ class ContactUs extends React.Component {
               <Row>
                 <Col lg={6} md={12}>
                   <div className="addressdetail">
-                    <Row>
+                    {/* <Row>
                       <Col lg={2} md={2} sm={2}>
                         <div className="iconbox">
                           <img src={location} alt="Location" />
@@ -308,6 +308,26 @@ class ContactUs extends React.Component {
                           </p>
                         </div>
                       </Col>
+                    </Row> */}
+                    {/* <Row>
+                      <Col lg={12} className="info-box">
+                        <p>Antlia is committed to protecting and respecting your privacy, and we'll only use your personal information to provide the services you requested from us. Antlia team would like to contact you about our products and services, as well as other content that may be of interest to you. If you consent to us, please contact us</p>
+                      </Col>
+                    </Row> */}
+                    <Row>
+                      <Col lg={2} md={2} sm={2}>
+                        <div className="iconbox">
+                          <i className="fa fa-info-circle"></i>
+                        </div>
+                      </Col>
+                      <Col lg={10} md={10} sm={10}>
+                        <div className="info-box">
+                          <h4>
+                            Important Info
+                          </h4>
+                          <p>Antlia is committed to protecting and respecting your privacy, and we'll only use your personal information to provide the services you requested from us. Antlia team would like to contact you about our products and services, as well as other content that may be of interest to you. If you consent to us, please contact us</p>
+                        </div>
+                      </Col>
                     </Row>
                     <Row>
                       <Col lg={2} md={2} sm={2}>
@@ -327,7 +347,7 @@ class ContactUs extends React.Component {
                         </div>
                       </Col>
                     </Row>
-                    <Row>
+                    {/* <Row>
                       <Col lg={2} md={2} sm={2}>
                         <div className="iconbox">
                           <img src={phone1} alt="Phone" />
@@ -344,7 +364,7 @@ class ContactUs extends React.Component {
                           <p>+92-51-8356551 | +92-51-4940782</p>
                         </div>
                       </Col>
-                    </Row>
+                    </Row> */}
                   </div>
                 </Col>
                 <Col lg={6} md={12}>
@@ -670,15 +690,15 @@ class ContactUs extends React.Component {
                                 onChange={this.onPhoneHandler}
                                 value={this.state.phone}
                               />
-                              
+
                             </div>
                             {this.state.touched.phone && (
-                            <FormText>
-                              {errors.phone && errors.phone[0]}
-                            </FormText>
-                          )}
+                              <FormText>
+                                {errors.phone && errors.phone[0]}
+                              </FormText>
+                            )}
                           </FormGroup>
-                          
+
                         </Col>
                       </Row>
                       <Row>
@@ -717,7 +737,7 @@ class ContactUs extends React.Component {
                               width="100%"
                             />
                           </div>
-                          
+
                         </Col>
                       </Row>
                       <Row>

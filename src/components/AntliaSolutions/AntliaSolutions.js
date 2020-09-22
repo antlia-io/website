@@ -29,25 +29,25 @@ class AntliaSolutions extends React.Component {
                   </div>
                   <div className="system-item">
                     <div className="icon">
-                      <img src={scalability} alt="calability" />
+                      <img src={scalability} alt="scalability" />
                     </div>
                     <div className="content">
-                    <h4>Scalability:</h4>
-                    <p>
-                      Enhanced Blockchain scalability through layer 1 and State
+                      <h4>Scalability:</h4>
+                      <p>
+                        Enhanced Blockchain scalability through layer 1 and State
                       Machine Sharding.{" "}
-                    </p>
+                      </p>
                     </div>
                   </div>
                   <div className="system-item">
                     <div className="icon">
-                      <img src={oracles} alt="Oracles" />
+                      <img src={oracles} alt="Trusted Smart Contracts" />
                     </div>
                     <div className="content">
-                    <h4>Oracles:</h4>
-                    <p>
-                      Fault-tolerant Oracles for Blockchain to digital
-                      infrastructure communications{" "}
+                      <h4>Trusted Smart Contracts:</h4>
+                      <p>
+                        Trusted Smart Contracts
+                        Web Assembly smart contract to avoid all attack vectors present in Ethereum and other blockchains
                     </p>
                     </div>
                   </div>
@@ -64,7 +64,6 @@ class AntliaSolutions extends React.Component {
         <div className="solutionsbgimg">
           <div className="container">
             <Row>
-         
               <Col lg={12} md={12}>
                 <div className="solutions-img">
                   <img src={solutions} alt="Soltions" />

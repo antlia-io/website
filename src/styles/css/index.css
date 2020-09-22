@@ -370,6 +370,22 @@
   letter-spacing: 0.5px;
   font-weight: 400; }
 
+#contact .fa-info-circle {
+  font-size: 24px;
+  color: #fff;
+  margin: 0.5rem 0 0; }
+
+#contact .info-box h4 {
+  font-size: 18px;
+  color: #fff;
+  margin: 5px 0 15px; }
+
+#contact .info-box p {
+  font-size: 14px;
+  color: #fff;
+  letter-spacing: 0.5px;
+  font-weight: 400; }
+
 #contact .contact-form {
   background: #fff;
   border-radius: 5px;
@@ -524,6 +540,13 @@
   padding: 50px 0; }
   #footer .container {
     position: relative; }
+  #footer .extra-content {
+    margin: 0 0 2rem; }
+    #footer .extra-content button {
+      background: transparent;
+      border: none;
+      outline: none;
+      text-decoration: underline; }
   #footer .vert-move {
     -webkit-animation: mover 2s infinite alternate;
     animation: mover 2s infinite alternate; }
